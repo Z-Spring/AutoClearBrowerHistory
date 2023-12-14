@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Clear History on Close",
+  "version": "1.0",
+  "permissions": [
+    "history",
+    "tabs",
+    "storage",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "clearHistory.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png"
+  }
+}
